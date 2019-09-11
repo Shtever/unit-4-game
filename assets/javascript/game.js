@@ -1,18 +1,17 @@
  // set win & loss vars to 0
  var wins = 0;
  var losses = 0;
- var targetNumber = Math.floor(Math.random() * 120) + 19;
- // Generate random number goal (19-120)
- $("#target-number").val(targetNumber)
+ 
+ start()
 
 
- var crystalRandomNumber = Math.floor(Math.random() * 12) + 1;
- console.log(crystalRandomNumber);
- //assign random numbers to each crystal (1-12)
-$("#crystal1");
-$("#crystal2");
-$("#crystal3");
-$("#crystal4");
+                        //  var crystalRandomNumber = Math.floor(Math.random() * 12) + 1;
+                        //  console.log(crystalRandomNumber);
+                        //  //assign random numbers to each crystal (1-12)
+                        // $("#crystal1");
+                        // $("#crystal2");
+                        // $("#crystal3");
+                        // $("#crystal4");
 
  //listen - click for each crystal
 
@@ -26,10 +25,11 @@ $("#crystal4");
 
         
 //function to generate random numbers
-function targetNumber(){
-    var targetNumber = Math.floor(Math.random() * 120) + 19;
-    console.log(targetNumber);
-    $("#target-number").innerHTML(targetNumber);
-}
 
 //function to reset
+function start(){
+    var targetNumber = Math.floor(Math.random() * 120) + 19;
+    // Generate random number goal (19-120)
+    $("#target-number").text(targetNumber);
+    console.log(targetNumber);
+    }
