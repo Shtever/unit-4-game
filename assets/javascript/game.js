@@ -1,7 +1,8 @@
 // set win & loss vars to 0
 var wins = 0;
 var losses = 0;
-
+var audioLoss = new Audio("/assets/Audio/Retarded.mp3");
+var audioWin = new Audio("/assets/Audio/Control.mp3");
 start();
 //assign random numbers to each crystal (1-12)
 
@@ -43,11 +44,13 @@ function checkScore() {
     if (userTotal === targetNumber) {
         wins++;
         $("#wins").text(wins);
+        audioWin.play();
         alert("WINNER WINNER CHICKEN DINNER!");
         start();
     } else if (userTotal > targetNumber) {
         losses++;
         $("#losses").text(losses);
+        audioLoss.play();
         alert("YA GOT GREEDY");
         start();
     } else { };
