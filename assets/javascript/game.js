@@ -71,3 +71,5 @@ function start() {
     console.log("Target Number: " + targetNumber);
     console.log("Crystal Values: " + crystalNumber1 + "/" + crystalNumber2 + "/" + crystalNumber3 + "/" + crystalNumber4);
 }
+
+$( document ).ready()
