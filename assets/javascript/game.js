@@ -1,8 +1,7 @@
-// set win & loss vars to 0
 var wins = 0;
 var losses = 0;
-var audioLoss = new Audio("/assets/Audio/Retarded.mp3");
-var audioWin = new Audio("/assets/Audio/Control.mp3");
+var audioLoss = new Audio("assets/Audio/Retarded.mp3");
+var audioWin = new Audio("assets/Audio/Control.mp3");
 start();
 //assign random numbers to each crystal (1-12)
 
@@ -72,4 +71,4 @@ function start() {
     console.log("Crystal Values: " + crystalNumber1 + "/" + crystalNumber2 + "/" + crystalNumber3 + "/" + crystalNumber4);
 }
 
-$( document ).ready()
+$(document).ready()
