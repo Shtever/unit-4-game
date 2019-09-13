@@ -65,7 +65,7 @@
      font-size: 20px;
  }
 
- #target-number,  #losses, #suddenDeathInstruction{
+ #target-number,  #losses{
      color: rgb(181, 20, 63);
  }
 
