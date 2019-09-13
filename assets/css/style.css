@@ -9,8 +9,7 @@
      background-image: url(https://images.launchbox-app.com/7e096bd2-c740-4e8f-8262-b56a2ed9c0bd.jpg);
      background-size: 100%;
      background-repeat: no-repeat;
-     width: fit-content;
-     margin: 0 auto;
+
  }
 
  p {
@@ -22,7 +21,7 @@
  }
 
  .crystal {
-     height: 150px;
+     width: 10%;
  }
 
  #crystal5 {

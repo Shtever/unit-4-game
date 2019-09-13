@@ -52,15 +52,17 @@ $("#crystal5").on("click", function () {
 // if player score < goal, add crystal score to player total
 function checkScore() {
     if (userTotal === targetNumber) {
+        $("#total").text(userTotal);
+        audioWin.play();
         wins++;
         $("#wins").text(wins);
-        audioWin.play();
         alert("YOU WON!");
         start();
     } else if (userTotal > targetNumber) {
+        $("#total").text(userTotal);
+        audioLoss.play();
         losses++;
         $("#losses").text(losses);
-        audioLoss.play();
         alert("YA GOT GREEDY");
         start();
     } else { };
