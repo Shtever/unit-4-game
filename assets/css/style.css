@@ -18,7 +18,7 @@
  }
  #crystalBox {
     background-color: rgba(0, 0, 0, .8);
-    margin: 0 auto;
+    margin: -16 auto;
  }
 
  .crystal {
@@ -37,6 +37,7 @@
  }
 
  #title {
+     font-size: auto;
      font-family: 'Press Start 2P', cursive;
      animation: blinkingText 2s infinite;
  }
@@ -71,4 +72,9 @@
 
  #total, #wins {
      color: rgb(246, 207, 0);
+ }
+
+ .buttons {
+    font-family: 'Press Start 2P', cursive;
+     font-size: 10px;
  }

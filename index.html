@@ -49,18 +49,40 @@
             <img class="crystal" id="crystal3" src="assets/images/don.png">
             <img class="crystal" id="crystal4" src="assets/images/raph.png">
             <div id="suddenDeath">
-                    <img id="crystal5" src="assets/images/shredder.png">
-                </div>
+                <img id="crystal5" src="assets/images/shredder.png">
+            </div>
         </div>
 
         <div id="scoreboard">
             <p>Wins: <span id="wins">0</span></p>
             <p>Losses: <span id="losses">0</span></p>
         </div>
+        <div> <button onclick="playAudio()" type="button" class="buttons">Play Audio</button>
+            <button onclick="pauseAudio()" type="button" class="buttons">Pause Audio</button>
+        </div>
+    </div>
 
 
     </div>
-    <script type="text/javascript" src="assets/javascript/game.js">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <audio id="myAudio">
+        <source src="assets/Audio/TMNT Theme.mp3" type="audio/ogg">
+        <source src="assets/Audio/TMNT Theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        } 
     </script>
 </body>
 

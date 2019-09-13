@@ -1,7 +1,7 @@
 var wins = 0;
 var losses = 0;
-var audioLoss = new Audio("assets/Audio/Idiot.mp3");
-var audioWin = new Audio("assets/Audio/Control.mp3");
+var audioLoss = new Audio("assets/Audio/shellShock.mp3");
+var audioWin = new Audio("assets/Audio/cowabunga.mp3");
 start();
 //assign random numbers to each crystal (1-12)
 
