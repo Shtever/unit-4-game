@@ -77,3 +77,19 @@
     font-family: 'Press Start 2P', cursive;
      font-size: 10px;
  }
+
+ #suddenDeathInstruction{
+    animation: blinkingText2 2s infinite;
+}
+
+@keyframes blinkingText2 {
+    0% {color: rgb(181, 20, 63);}
+    24% {color: rgb(181, 20, 63);}
+    25% {color: transparent;}
+    49% {color: transparent;}
+    50% {color: rgb(181, 20, 63);}
+    74% {color: rgb(181, 20, 63);}
+    75% {color: transparent;}
+    99% {color: transparent;}
+    100% {color: rgb(181, 20, 63);}
+ }
