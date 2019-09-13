@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Collector</title>
+    <title>Cowabunga!</title>
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-    
+
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- jQuery Library -->
@@ -17,50 +17,49 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="title">Crystal Collector</h1>
-    </header>
+    <div id="page">
+        <header>
+            <h1 id="title">Turtles in Turmoil</h1>
+        </header>
+        <div id="instructions">
+            <p>You will be given a Target Number at the start of the game.
+                <br>Click on a turtle to add points to your total score.
+                <br>Each turtle has a random value between 1 and 12.
+                <br>Win the game by matching your total score to the Target Number. You lose the game if your total
+                score goes
+                above the random number.
+                <br>
+                Each time the game starts, the values of the turtles will be changed.
+            </p>
+            <p id="suddenDeathInstruction">If you're feeling lucky, click on Shredder for a sudden death match! </p>
+        </div>
 
-    <div id="instructions">
-        <p>You will be given a random Target Number at the start of the game.
-            <br><br>
-            There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
-            total score. Each crystal has a random value between 1 and 12.
-            <br><br>
-            You win the game by matching your total score to the Target Number. You lose the game if your total score goes
-            above the random number.
-            <br><br>
-            Each time the game starts, the values of the crystals will be changed.
-        </p>
-    </div>
+        <div id="target">
+            <p>Target Number: <span id="target-number">0</span></p>
+            <div id="totalScore">
+                <p>Your total score is:
+                    <span id="total">0
+                    </span></p>
+            </div>
+        </div>
 
-    <div id="target">
-        <p>Target Number: <span id="target-number">0</span></p>
-    </div>
+        <div id="crystalBox">
+            <img class="crystal" id="crystal1" src="assets/images/leo.png">
+            <img class="crystal" id="crystal2" src="assets/images/mike.png">
+            <img class="crystal" id="crystal3" src="assets/images/don.png">
+            <img class="crystal" id="crystal4" src="assets/images/raph.png">
+            <div id="suddenDeath">
+                    <img id="crystal5" src="assets/images/shredder.png">
+                </div>
+        </div>
 
-    <div id="scoreboard">
-        <p>Wins: <span id="wins">0</span></p>
-        <p>Losses: <span id="losses">0</span></p>
-    </div>
+        <div id="scoreboard">
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+        </div>
 
-    <div id="crystalBox">
-        <img class="crystal" id="crystal1" src="assets/images/leo.png">
-        <img class="crystal" id="crystal2" src="assets/images/mike.png">
-        <img class="crystal" id="crystal3" src="assets/images/don.png">
-        <img class="crystal" id="crystal4" src="assets/images/raph.png">
-    </div>
 
-    <div id="suddenDeath">
-        <img id="crystal5" src="assets/images/shredder.png">
     </div>
-
-    <div id="totalScore">
-        <p>Your total score is: <br>
-            <span id="total">0
-            </span></p>
-    </div>
-    
-                        <!-- CORRECT -->
     <script type="text/javascript" src="assets/javascript/game.js">
     </script>
 </body>

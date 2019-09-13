@@ -1,21 +1,39 @@
  /* Stylesheet */
-html {
-    width: 1024px;
+
+#page{
+    text-align: center;
+    margin: 0 auto;
 }
+
  body {
      background-image: url(https://images.launchbox-app.com/7e096bd2-c740-4e8f-8262-b56a2ed9c0bd.jpg);
+     background-size: 100%;
      background-repeat: no-repeat;
+     width: fit-content;
+     margin: 0 auto;
+ }
+
+ p {
+    margin: 0;
+ }
+ #crystalBox {
+    background-color: rgba(0, 0, 0, .8);
+    margin: 0 auto;
  }
 
  .crystal {
-     width: 100px;
+     height: 150px;
+ }
+
+ #crystal5 {
+     height:100px;
  }
 
  header {
      background-color: rgba(0, 151, 10, .9);
      margin: 0 auto;
      text-align: center;
-     margin-top: 25px;
+     margin-top: 5px;
  }
 
  #title {
@@ -35,9 +53,22 @@ html {
      100% {color: rgb(246, 207, 0);}
  }
 
- #instructions {
+ #instructions, #scoreboard, #target {
      background-color: rgba(0, 0, 0, .8);
      color: green;
      font-family: 'Press Start 2P', cursive;
+     font-size: 10px;
+     text-align: center;
+ }
 
+ #scoreboard, #target {
+     font-size: 20px;
+ }
+
+ #target-number,  #losses, #suddenDeathInstruction{
+     color: rgb(181, 20, 63);
+ }
+
+ #total, #wins {
+     color: rgb(246, 207, 0);
  }
