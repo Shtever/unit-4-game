@@ -1,39 +1,43 @@
- /* Stylesheet */ 
- body {
-background-image: url(https://lutris.net/media/games/screenshots/gfs_62686_2_3.jpg);
-background-repeat: no-repeat;
-background-size: contain;
+ /* Stylesheet */
+html {
+    width: 1024px;
 }
- 
+ body {
+     background-image: url(https://images.launchbox-app.com/7e096bd2-c740-4e8f-8262-b56a2ed9c0bd.jpg);
+     background-repeat: no-repeat;
+ }
+
  .crystal {
      width: 100px;
  }
 
-header {
-    background-color: rgba(0, 151, 10, .9);
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 25px;
-}
+ header {
+     background-color: rgba(0, 151, 10, .9);
+     margin: 0 auto;
+     text-align: center;
+     margin-top: 25px;
+ }
 
-#title {
-    font-family: 'Press Start 2P', cursive;
-        animation:blinkingText 2s infinite;
-    }
+ #title {
+     font-family: 'Press Start 2P', cursive;
+     animation: blinkingText 2s infinite;
+ }
 
+ @keyframes blinkingText {
+     0% {color: rgb(246, 207, 0)}
+     24% {color: rgb(246, 207, 0);}
+     25% {color: transparent;}
+     49% {color: transparent;}
+     50% {color: rgb(246, 207, 0);}
+     74% {color: rgb(246, 207, 0);}
+     75% {color: transparent;}
+     99% {color: transparent;}
+     100% {color: rgb(246, 207, 0);}
+ }
 
-@keyframes blinkingText{
-     0%{color: rgb(246, 207, 0);	}
-    24%{color: rgb(246, 207, 0);	}
-    25%{color: transparent;	}
-    49%{color:transparent;}
-    50%{color: rgb(246, 207, 0);	}
-    74%{color: rgb(246, 207, 0);	}
-    75%{color: transparent;	}
-    99%{color:transparent;}
-    100%{color: rgb(246, 207, 0);	}
-    }
+ #instructions {
+     background-color: rgba(0, 0, 0, .8);
+     color: green;
+     font-family: 'Press Start 2P', cursive;
 
-#instructions {
-    
-}
+ }
