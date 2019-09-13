@@ -1,6 +1,6 @@
 var wins = 0;
 var losses = 0;
-var audioLoss = new Audio("assets/Audio/Retarded.mp3");
+var audioLoss = new Audio("assets/Audio/Idiot.mp3");
 var audioWin = new Audio("assets/Audio/Control.mp3");
 start();
 //assign random numbers to each crystal (1-12)
@@ -35,6 +35,17 @@ $("#crystal4").on("click", function () {
     checkScore()
 });
 
+$("#crystal5").on("click", function () {
+    if(crystalNumber5 === 1){
+        userTotal = targetNumber
+        console.log("Sudden Death Success!")
+    } else { 
+        userTotal = targetNumber + 1
+        console.log("Sudden Death Failure!")
+    }
+    checkScore()
+});
+
 //create player score counter
 
 // if statement - 
@@ -44,7 +55,7 @@ function checkScore() {
         wins++;
         $("#wins").text(wins);
         audioWin.play();
-        alert("WINNER WINNER CHICKEN DINNER!");
+        alert("YOU WON!");
         start();
     } else if (userTotal > targetNumber) {
         losses++;
@@ -65,6 +76,7 @@ function start() {
     crystalNumber2 = Math.floor(Math.random() * 12) + 1;
     crystalNumber3 = Math.floor(Math.random() * 12) + 1;
     crystalNumber4 = Math.floor(Math.random() * 12) + 1;
+    crystalNumber5 = Math.round(Math.random());
     userTotal = 0
     $("#total").text(0);
     console.log("Target Number: " + targetNumber);
